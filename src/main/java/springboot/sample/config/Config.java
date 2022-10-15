@@ -15,19 +15,19 @@ public class Config {
 	@Autowired
 	private Environment env;
 
-	@Value("db.jdbc")
+	@Value("${db.jdbc}")
 	private String jdbc;
 
-	@Value("db.driverClass")
+	@Value("${db.driverClass}")
 	private String driverClass;
 
-	@Value("db.dialect")
+	@Value("${db.dialect}")
 	private String dialect;
 
-	@Value("db.user")
+	@Value("${db.user}")
 	private String user;
 
-	@Value("db.pswd")
+	@Value("${db.pswd}")
 	private String pswd;
 
 	public String get(String key) {
